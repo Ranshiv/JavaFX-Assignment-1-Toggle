@@ -1,5 +1,5 @@
 //Author Name -> Ranshiv Kumar
-//Project Description ->
+//Project Description -> Assignment no 1-> Creating a tableview and Bargraph view using JavaFx and MySQL
 //Date -> 26-Feb-2024
 //Submitted to ->Zahi Abdelaziz
 

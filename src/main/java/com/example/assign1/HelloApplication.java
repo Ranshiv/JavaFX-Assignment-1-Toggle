@@ -15,7 +15,7 @@ public class HelloApplication extends Application {
         Image logo = new Image(getClass().getResourceAsStream("/icons8-lambda-64.png"));
         stage.getIcons().add(logo);
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 1000, 750);
+        Scene scene = new Scene(fxmlLoader.load(), 1100, 750);
         helloController controller = fxmlLoader.getController();
         stage.setTitle("Scheme Trends");
         stage.setScene(scene);
