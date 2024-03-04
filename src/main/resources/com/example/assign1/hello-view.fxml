@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.Button?>
+<BorderPane fx:id="borderPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assign1.helloController" stylesheets="/styles.css">
+
+    <center>
+        <SplitPane dividerPositions="0.5" orientation="HORIZONTAL" style="-fx-background-color: white;">
+            <TableView fx:id="tableView" prefHeight="200.0" prefWidth="499.0" style="-fx-background-color: black;" styleClass="my-table-view">
+                <columns>
+<!--                    <TableColumn fx:id="idColumn" text="ID" />-->
+                    <TableColumn fx:id="currentRankColumn" text="Current Rank" prefWidth="100.0"/>
+                    <TableColumn fx:id="lastYearRankColumn" text="Last Year Rank" prefWidth="115.0"/>
+                    <TableColumn fx:id="languageNameColumn" text="Language Name" />
+                    <TableColumn fx:id="ratingColumn" text="Rating" prefWidth="109.0"/>
+                    <TableColumn fx:id="ratingChangeColumn" text="Rating Change" prefWidth="139.0"/>
+                </columns>
+            </TableView>
+            <BarChart fx:id="barChart" style="-fx-background-color: black;">
+                <xAxis>
+                    <CategoryAxis styleClass="white-axis" />
+                </xAxis>
+                <yAxis>
+                    <NumberAxis styleClass="white-axis" />
+                </yAxis>
+            </BarChart>
+            <effect>
+                <Blend />
+            </effect>
+        </SplitPane>
+    </center>
+    <top>
+        <Label prefHeight="49.0" prefWidth="481.0" style="-fx-background-color: black; -fx-text-fill: white;" text="Scheme Trends for Programming Languages" BorderPane.alignment="CENTER">
+            <font>
+                <Font name="Consolas" size="22.0" />
+            </font>
+        </Label>
+    </top>
+    <bottom>
+        <Button text="Toggle View" onAction="#toggleView"/>
+    </bottom>
+
+</BorderPane>
