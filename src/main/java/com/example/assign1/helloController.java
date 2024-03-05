@@ -1,3 +1,12 @@
+/*
+ * Name -> Ranshiv kumar
+ * Student no -> 200555490
+ * Purpose -> Assignment 1 -> To display the Bargraph and Tableview
+ * Date -> 26-Feb-2024
+ * Submitted to Zahy Abdelaziz
+ */
+
+
 package com.example.assign1;
 
 import javafx.collections.ObservableList;
@@ -62,7 +71,7 @@ public class helloController {
     }
 
     private void loadData() throws SQLException {
-        
+
         // Connect to MySQL database
         String url = "jdbc:mysql://localhost:3306/programming_languages";
         String user = "root";
@@ -99,10 +108,14 @@ public class helloController {
 
     }
 
+    // Varible to store the current state of the FXML Button
     @FXML
     private Button toggleButton;
 
+    // Method that will help to toggle between Tableview and BarGraph
     public void toggleView() {
+        // Boolean datatype in order to set the visibility of the TableView and BarGraph
+        // in terms of 0 or 1 // true or false
         boolean isTableViewVisible = tableView.isVisible();
         tableView.setVisible(!isTableViewVisible);
         barChart.setVisible(isTableViewVisible);
