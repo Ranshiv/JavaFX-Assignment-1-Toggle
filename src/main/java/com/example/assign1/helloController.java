@@ -62,6 +62,7 @@ public class helloController {
     }
 
     private void loadData() throws SQLException {
+        
         // Connect to MySQL database
         String url = "jdbc:mysql://localhost:3306/programming_languages";
         String user = "root";
